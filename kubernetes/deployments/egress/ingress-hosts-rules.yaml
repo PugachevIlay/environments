@@ -19,7 +19,7 @@ spec:
                 port:
                   number: 80
 
-    - host: "www.pugachev.fun"
+    - host: "www.form.pugachev.fun"
       http:
         paths:
           - path: "/"
