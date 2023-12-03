@@ -29,7 +29,7 @@ spec:
             path: "/"
             backend:
               service:
-                name: nginx-service
+                name: "nginx-service"
                 port:
                   number: 80
 
