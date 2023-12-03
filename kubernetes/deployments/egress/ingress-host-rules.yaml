@@ -1,0 +1,30 @@
+#---------------------------------------------------------------------
+# Manifest File to create Ingess Rules for Hosts
+#---------------------------------------------------------------------
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-hosts
+
+spec:
+  rules:
+    - host: www.app.net
+      http:
+        paths:
+          - backend:
+              serviceName: main
+              servicePort: 80
+
+    - host: first.app.net
+      http:
+        paths:
+          - backend:
+              serviceName: first
+              servicePort: 80
+
+    - host: second.app.net
+      http:
+        paths:
+          - backend:
+              serviceName: second
+              servicePort: 80
