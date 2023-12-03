@@ -1,22 +1,6 @@
 #---------------------------------------------------------------------
 # Manifest File to create Ingress Rules for Hosts
 #---------------------------------------------------------------------
-#apiVersion: networking.k8s.io/v1
-#kind: Ingress
-#metadata:
-#  name: ingress-hosts
-#
-#spec:
-#  rules:
-#    - host: www.pugachev.fun
-#      http:
-#        paths:
-#          - path: /
-#          - backend:
-#              serviceName: nginx-service
-#              servicePort: 80
-
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -28,7 +12,7 @@ spec:
       http:
         paths:
           - pathType: Prefix
-            path: "/"
+            path: "/nginx"
             backend:
               service:
                 name: nginx-service
