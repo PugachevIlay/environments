@@ -11,8 +11,8 @@ spec:
     - host: "www.pugachev.fun"
       http:
         paths:
-          - pathType: Prefix
-            path: "/nginx"
+          - path: "/nginx"
+            pathType: Prefix
             backend:
               service:
                 name: nginx-service
