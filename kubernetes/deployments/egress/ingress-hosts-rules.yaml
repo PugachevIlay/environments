@@ -18,3 +18,14 @@ spec:
                 name: nginx-service
                 port:
                   number: 80
+
+    - host: "www.form.pugachev.fun"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: apache-http
+                port:
+                  number: 80
