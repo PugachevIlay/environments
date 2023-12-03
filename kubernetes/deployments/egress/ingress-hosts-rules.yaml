@@ -1,5 +1,5 @@
 #---------------------------------------------------------------------
-# Manifest File to create Ingess Rules for Hosts
+# Manifest File to create Ingress Rules for Hosts
 #---------------------------------------------------------------------
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
@@ -8,23 +8,23 @@ metadata:
 
 spec:
   rules:
-    - host: www.app.net
+    - host: www.pugachev.fun
       http:
         paths:
           - backend:
-              serviceName: main
+              serviceName: nginx-service
               servicePort: 80
 
-    - host: first.app.net
-      http:
-        paths:
-          - backend:
-              serviceName: first
-              servicePort: 80
-
-    - host: second.app.net
-      http:
-        paths:
-          - backend:
-              serviceName: second
-              servicePort: 80
+#    - host: first.app.net
+#      http:
+#        paths:
+#          - backend:
+#              serviceName: first
+#              servicePort: 80
+#
+#    - host: second.app.net
+#      http:
+#        paths:
+#          - backend:
+#              serviceName: second
+#              servicePort: 80
