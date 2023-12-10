@@ -23,10 +23,10 @@ kind: Service
 metadata:
   name: apache-http
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: apache
   ports:
     - protocol: TCP
-      port: 81
+      port: 80
       targetPort: 80
