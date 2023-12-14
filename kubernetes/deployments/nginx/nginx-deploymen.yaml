@@ -23,10 +23,10 @@ kind: Service
 metadata:
   name: nginx-service
   labels:
-    app.kubernetes.io/name: nginx
+    app: nginx
 spec:
   selector:
-    app.kubernetes.io/name: nginx
+    app: nginx
   ports:
     - name: http
       port: 80
