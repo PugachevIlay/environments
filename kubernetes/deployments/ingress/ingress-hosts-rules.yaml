@@ -5,8 +5,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-hosts
-  annotations:
-    metallb.universe.tf/address: 51.250.5.50
 
 spec:
   rules:
@@ -19,7 +17,7 @@ spec:
               service:
                 name: nginx-service
                 port:
-                  number: 80
+                  number: 8080
 
 #    - host: "www.form.pugachev.fun"
 #      http:
