@@ -17,7 +17,7 @@ spec:
               service:
                 name: nginx-service
                 port:
-                  number: 8080
+                  number: 8443
 
 #    - host: "www.form.pugachev.fun"
 #      http:
