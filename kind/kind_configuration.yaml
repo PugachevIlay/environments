@@ -9,7 +9,7 @@ node:
     kubeadmConfigPatches:
       - |
         kind: InitConfiguration
-        nodeRistration:
+        nodeRegistration:
           kubeletExtraArgs:
             node-labels: "ingress-ready-true"
     extraPortMappings:
