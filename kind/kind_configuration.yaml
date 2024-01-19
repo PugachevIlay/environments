@@ -2,7 +2,7 @@ kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 name: study
 networking:
-  apiServerAddress: "92.118.170.194"
+  #  apiServerAddress: "0.0.0.0"
   apiServerPort: 6433
 nodes:
   - role: control-plane
